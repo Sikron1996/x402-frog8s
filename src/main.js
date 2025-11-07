@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import { WalletConnectModal } from "@walletconnect/modal-html";
+import { WalletConnectModal } from "@walletconnect/modal";
 
 const WC_PROJECT_ID = "63bd4633378dbc52c202e15313227c54";
 const RECEIVER = "0xF97a410f2f0b64Cb5820baD63d878c3A967235AA";
