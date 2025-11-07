@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import { Web3Modal } from "@web3modal/html";
+import { WalletConnectModal } from "@walletconnect/modal-html";
 
 const WC_PROJECT_ID = "63bd4633378dbc52c202e15313227c54";
 const RECEIVER = "0xF97a410f2f0b64Cb5820baD63d878c3A967235AA";
@@ -65,7 +65,11 @@ document.getElementById("payMeta").onclick = async () => {
 
 document.getElementById("payWC").onclick = async () => {
   try {
-    const modal = new Web3Modal({ projectId: WC_PROJECT_ID });
+    const modal = new WalletConnectModal({
+      projectId: WC_PROJECT_ID,
+      themeMode: "dark",
+      standaloneChains: ["eip155:8453"]
+    });
     const provider = await modal.connectWalletConnect();
     await ensureBaseNetwork(provider);
     await sendUSDC(provider);

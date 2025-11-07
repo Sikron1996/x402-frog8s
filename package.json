@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@web3modal/html": "^4.2.0",
+    "@walletconnect/modal-html": "^2.6.2",
     "ethers": "^6.13.2"
   },
   "devDependencies": {
