@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@web3modal/html": "^3.5.3",
+    "@web3modal/html": "^4.2.0",
     "ethers": "^6.13.2"
   },
   "devDependencies": {
